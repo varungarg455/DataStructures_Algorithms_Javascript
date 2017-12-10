@@ -1,9 +1,15 @@
 var LinkedList = require('./Linked_List/LinkedList');
 
-var list = new LinkedList([1, 2, 3, 4, 5]);
-list.insertAtStart(10);
+var list = new LinkedList();
+/* list.insertAtStart(10);
+list.printList(); */
+console.log("Deleting at start : " + list.deleteAtStart());
 list.printList();
-list.deleteAtStart();
-list.printList();
-list.deleteAtEnd();
+list.insertAtEnd(5);
+list.insertAtEnd(55);
+list.insertAtStart(15);
+console.log("Deleting at end : " + list.deleteAtEnd());
+console.log("Deleting at start : " + list.deleteAtStart());
+console.log("Deleting at end : " + list.deleteAtEnd());
+console.log("Deleting at start : " + list.deleteAtStart());
 list.printList();
