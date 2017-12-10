@@ -60,7 +60,7 @@ LinkedList.prototype.deleteAtEnd = function () {
         temp.next = null;
         this.tail = temp;
     }
-    return result;       //returns null if list is empty
+    return result;  
 }
 
 //deleting an element at the start of the linked list
@@ -92,7 +92,7 @@ LinkedList.prototype.searchElement = function (value) {
             temp = temp.next;
         } 
     }
-    return result;       //returns null if list is empty
+    return result;  
 }
 
 //printing the linked list
