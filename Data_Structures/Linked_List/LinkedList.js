@@ -83,13 +83,14 @@ LinkedList.prototype.searchElement = function (value) {
     if (this.head == null) {
         result = "List is empty";
     } else{
-        result = "Element not found in the list";
+        result = "Element " + value + " found in the list";
         let temp = this.head;
-        do {
+        while(temp != null) {
             if(temp.data === value){
-                result = "Element found in the list";
+                result = "Element " + value + " found in the list";
             }
-        } while(temp.next != null);
+            temp = temp.next;
+        } 
     }
     return result;       //returns null if list is empty
 }
