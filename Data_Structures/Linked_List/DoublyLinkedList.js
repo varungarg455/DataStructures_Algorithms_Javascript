@@ -1,6 +1,6 @@
 var Node = require('../Utilities/LinkedListNode');
 
-function LinkedList(values) {
+function DoublyLinkedList(values) {
     this.head = null;
     this.tail = null;
     if (values != null) {
@@ -9,14 +9,14 @@ function LinkedList(values) {
 }
 
 //creating a new list using the array of values
-LinkedList.prototype.createList = function (values) {
+DoublyLinkedList.prototype.createList = function (values) {
     for (value of values) {
         this.insertAtEnd(value);
     }
 }
 
 //inserting an element at the end of the linked list
-LinkedList.prototype.insertAtEnd = function (value) {
+DoublyLinkedList.prototype.insertAtEnd = function (value) {
     let node = new Node(value);
     node.prev = null;
     //checking if the list is empty
@@ -31,7 +31,7 @@ LinkedList.prototype.insertAtEnd = function (value) {
 }
 
 //inserting an element at the start of the linked list
-LinkedList.prototype.insertAtStart = function (value) {
+DoublyLinkedList.prototype.insertAtStart = function (value) {
     let node = new Node(value);
     node.prev = null;
     //checking if the list is empty
@@ -46,7 +46,7 @@ LinkedList.prototype.insertAtStart = function (value) {
 }
 
 //deleting an element at the end of the linked list
-LinkedList.prototype.deleteAtEnd = function () {
+DoublyLinkedList.prototype.deleteAtEnd = function () {
     let result = null;
     //checking condition if the list is empty
     if (this.head == null) {
@@ -69,7 +69,7 @@ LinkedList.prototype.deleteAtEnd = function () {
 }
 
 //deleting an element at the start of the linked list
-LinkedList.prototype.deleteAtStart = function () {
+DoublyLinkedList.prototype.deleteAtStart = function () {
     let result = null;
     //checking condition if the list is empty
     if (this.head == null) {
@@ -83,7 +83,7 @@ LinkedList.prototype.deleteAtStart = function () {
 }
 
 //searching an element in the linked list
-LinkedList.prototype.searchElement = function (value) {
+DoublyLinkedList.prototype.searchElement = function (value) {
     let result = null;
     //checking condition if the list is empty
     if (this.head == null) {
@@ -102,7 +102,7 @@ LinkedList.prototype.searchElement = function (value) {
 }
 
 //printing the linked list
-LinkedList.prototype.printList = function () {
+DoublyLinkedList.prototype.printList = function () {
     let temp = this.head;
     let output = "";
     while (temp != null) {
@@ -113,7 +113,7 @@ LinkedList.prototype.printList = function () {
 }
 
 //printing linked list in reverse order
-LinkedList.prototype.printListReverse = function () {
+DoublyLinkedList.prototype.printListReverse = function () {
     let temp = this.tail;
     let output = "";
     while (temp != null) {
@@ -123,4 +123,4 @@ LinkedList.prototype.printListReverse = function () {
     console.log("Reverse Linked List : " + "NULL" + output);
 }
 
-module.exports = LinkedList;
+module.exports = DoublyLinkedList;
