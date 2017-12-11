@@ -1,3 +1,5 @@
+//This is the implementation of doubly linked list using javascript
+
 var Node = require('../Utilities/LinkedListNode');
 
 function DoublyLinkedList(values) {

@@ -1,3 +1,5 @@
+//This is the implementation of linked list using javascript.
+
 var Node = require('../Utilities/LinkedListNode');
 
 function LinkedList(values) {
