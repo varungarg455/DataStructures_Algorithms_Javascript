@@ -18,7 +18,7 @@ DoublyLinkedList.prototype.createList = function (values) {
 }
 
 //inserting an element at the end of the linked list
-DoublyLinkedList.prototype.insertAtEnd = function (value) {
+DoublyLinkedList.prototype.insertAtEnd = function(value) {
     let node = new Node(value);
     node.prev = null;
     //checking if the list is empty

@@ -31,7 +31,7 @@ Stack.prototype.isEmpty = function () {
     }
 }
 
-//Gettinig the size of the stack
+//Getting the size of the stack
 Stack.prototype.size = function () {
     return this.top++;
 }
