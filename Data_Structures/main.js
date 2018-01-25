@@ -1,6 +1,7 @@
 var LinkedList = require('./Linked_List/LinkedList');
 var DoublyLinkedList = require('./Linked_List/DoublyLinkedList');
 var Stack = require('./Stack/Stack');
+var Queue = require('./Stack/Queue');
 
 var list = new DoublyLinkedList([1, 2, 3, 4, 5, 6, 7, 8, 9]);
 list.printListReverse();
@@ -14,3 +15,11 @@ stack.push(20);
 stack.push(25);
 console.log(stack.isEmpty());
 stack.printStack(); */
+
+var queue = new Queue();
+queue.add(10);
+queue.add(20);
+queue.add(30);
+queue.printQueue();
+console.log(`Removed element ${queue.remove()}\n`);
+queue.printQueue();
