@@ -20,6 +20,8 @@ var queue = new Queue();
 queue.add(10);
 queue.add(20);
 queue.add(30);
+console.log(`Size of queue is ${queue.size()}`);
 queue.printQueue();
 console.log(`Removed element ${queue.remove()}\n`);
+console.log(`Size of queue is ${queue.size()}`);
 queue.printQueue();
