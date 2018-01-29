@@ -1,7 +1,7 @@
-var LinkedList = require('./Linked_List/LinkedList');
-var DoublyLinkedList = require('./Linked_List/DoublyLinkedList');
-var Stack = require('./Stack/Stack');
-var Queue = require('./Stack/Queue');
+var LinkedList = require('./Data_Structures/LinkedList');
+var DoublyLinkedList = require('./Data_Structures/DoublyLinkedList');
+var Stack = require('./Data_Structures/Stack');
+var Queue = require('./Data_Structures/Queue');
 
 var list = new DoublyLinkedList([1, 2, 3, 4, 5, 6, 7, 8, 9]);
 list.printListReverse();
